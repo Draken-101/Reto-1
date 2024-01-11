@@ -1,0 +1,39 @@
+/*quitamos margin a todo*/
+*{
+    margin: 0;
+}
+/*----------------------*/
+/*Centramos con esta clase*/
+.Centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*Ponemos que los primeros hijos tomen esas propiedades*/
+    :first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.Rojo{
+    background-color: red;
+    width: 600px;
+    height: 600px;
+}
+.Azul{
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    /*Le puse un color al borde para que se note border-radius*/
+    border: 2px solid rgb(255, 255, 255);
+}
+.Verde{
+    background-color: rgb(54, 255, 47);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*Le puse un color al borde para que se note border-radius*/
+    border: 2px solid rgb(255, 255, 255);
+}
